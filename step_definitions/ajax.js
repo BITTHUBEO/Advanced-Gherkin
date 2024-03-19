@@ -1,4 +1,4 @@
-const { I, homePage, dynamicId} = inject();
+const { I, homePage, ajax} = inject();
 
 Given('The ajax website is open and ready for use', () => {
     homePage.goToWebsite();

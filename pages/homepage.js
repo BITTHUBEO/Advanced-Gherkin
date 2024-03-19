@@ -7,6 +7,9 @@ module.exports = {
     lessons: {
       dynamicId: '//*[@id="overview"]/div/div[1]/div[1]/h3/a',
       ajax : '//*[@id="overview"]/div/div[2]/div[1]/h3/a',
+      visibility: '//*[@id="overview"]/div/div[4]/div[1]/h3/a',
+      clientdelay: '//*[@id="overview"]/div/div[2]/div[2]/h3',
+      dynamictable: '//*[@id="overview"]/div/div[3]/div[2]/h3/a',
     },
   // insert your locators and methods here
   goToWebsite(){
@@ -17,5 +20,14 @@ module.exports = {
   },
   goToAjAx (){
     I.click(this.lessons.ajax)
+  },
+  goToVisibility (){
+    I.click(this.lessons.visibility)
+  },
+  goToClientDelay (){
+    I.click(this.lessons.clientdelay)
+  },
+  goToDynamicTable (){
+    I.click(this.lessons.dynamictable)
   }
 }
