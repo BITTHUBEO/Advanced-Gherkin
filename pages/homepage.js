@@ -17,6 +17,8 @@ module.exports = {
       verify: '//*[@id="overview"]/div/div[3]/div[3]/h3/a',
       mouse: '//*[@id="overview"]/div/div[4]/div[3]/h3/a',
       textinput: '//*[@id="overview"]/div/div[2]/div[4]/h3/a',
+      bar: '//*[@id="overview"]/div/div[3]/div[4]/h3/a',
+      nonspace: '//*[@id="overview"]/div/div[4]/div[4]/h3/a'
     },
   // insert your locators and methods here
   goToWebsite(){
@@ -57,5 +59,11 @@ module.exports = {
   },
   goToTextInput(){
     I.click(this.lessons.textinput)
+  },
+  goToBar(){
+    I.click(this.lessons.bar)
+  },
+  goToNonSpace(){
+    I.click(this.lessons.nonspace)
   }
 }

@@ -2,7 +2,7 @@ const { I, homePage, dom } = inject();
 const assert = require('assert');
 
 
-Given('The website is open and ready for use', () => {
+Given('The dom website is open and ready for use', () => {
     homePage.goToWebsite();
     I.wait(10)
     homePage.goToDom();

@@ -2,7 +2,7 @@ const { I } = inject();
 
 module.exports = {
     lesson: {
-        buttonId: '//*[@id="b4e97b71-5cbd-5c34-b076-3f25793425ed"]'
+        buttonId: '//*[@id="4a3a4560-b373-cace-f23c-efe751b08cd1"]'
     },
   // insert your locators and methods here
 
