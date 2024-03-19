@@ -20,6 +20,8 @@ exports.config = {
     hidden: "./pages/hidden.js",
     click: "./pages/click.js",
     verify: "./pages/verify.js",
+    mouse: "./pages/mouse.js",
+    textInput: "./pages/textinput.js",
 
   },
   mocha: {},
@@ -29,7 +31,7 @@ exports.config = {
   hooks: [],
   gherkin: {
     features: './features/*.feature',
-    steps: ['./step_definitions/homepage.js','./step_definitions/dynamicID.js','./step_definitions/ajax.js','./step_definitions/visibility.js','./step_definitions/clientdelay.js','./step_definitions/table.js','./step_definitions/app.js','./step_definitions/dom.js','./step_definitions/hidden.js','./step_definitions/click.js','./step_definitions/verify.js'  ]
+    steps: ['./step_definitions/homepage.js','./step_definitions/dynamicID.js','./step_definitions/ajax.js','./step_definitions/visibility.js','./step_definitions/clientdelay.js','./step_definitions/table.js','./step_definitions/app.js','./step_definitions/dom.js','./step_definitions/hidden.js','./step_definitions/click.js','./step_definitions/verify.js','./step_definitions/mouse.js','./step_definitions/textinput.js'  ]
   },
   plugins: {
     screenshotOnFail: {

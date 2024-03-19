@@ -15,6 +15,8 @@ module.exports = {
       hidden :'//*[@id="overview"]/div/div[1]/div[3]/h3/a',
       click: '//*[@id="overview"]/div/div[2]/div[3]/h3/a',
       verify: '//*[@id="overview"]/div/div[3]/div[3]/h3/a',
+      mouse: '//*[@id="overview"]/div/div[4]/div[3]/h3/a',
+      textinput: '//*[@id="overview"]/div/div[2]/div[4]/h3/a',
     },
   // insert your locators and methods here
   goToWebsite(){
@@ -50,4 +52,10 @@ module.exports = {
   goToVerify (){
     I.click(this.lessons.verify)
   },
+  goToMouseOver (){
+    I.click(this.lessons.mouse)
+  },
+  goToTextInput(){
+    I.click(this.lessons.textinput)
+  }
 }
