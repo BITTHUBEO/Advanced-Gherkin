@@ -10,6 +10,7 @@ module.exports = {
       visibility: '//*[@id="overview"]/div/div[4]/div[1]/h3/a',
       clientdelay: '//*[@id="overview"]/div/div[2]/div[2]/h3',
       dynamictable: '//*[@id="overview"]/div/div[3]/div[2]/h3/a',
+      sampleapp: '//*[@id="overview"]/div/div[4]/div[2]/h3/a'
     },
   // insert your locators and methods here
   goToWebsite(){
@@ -29,5 +30,8 @@ module.exports = {
   },
   goToDynamicTable (){
     I.click(this.lessons.dynamictable)
+  },
+  goToSampleApp (){
+    I.click(this.lessons.sampleapp)
   }
 }
