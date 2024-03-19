@@ -16,6 +16,7 @@ exports.config = {
     clientDelay: "./pages/clientdelay.js",
     dynamicTable: "./pages/table.js",
     sampleApp: "./pages/app.js",
+    dom: "./pages/dom.js",
 
   },
   mocha: {},
@@ -25,7 +26,7 @@ exports.config = {
   hooks: [],
   gherkin: {
     features: './features/*.feature',
-    steps: ['./step_definitions/homepage.js','./step_definitions/dynamicID.js','./step_definitions/ajax.js','./step_definitions/visibility.js','./step_definitions/clientdelay.js','./step_definitions/table.js','./step_definitions/app.js'  ]
+    steps: ['./step_definitions/homepage.js','./step_definitions/dynamicID.js','./step_definitions/ajax.js','./step_definitions/visibility.js','./step_definitions/clientdelay.js','./step_definitions/table.js','./step_definitions/app.js','./step_definitions/dom.js'  ]
   },
   plugins: {
     screenshotOnFail: {
